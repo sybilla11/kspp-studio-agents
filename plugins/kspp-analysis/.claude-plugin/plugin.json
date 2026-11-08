@@ -1,0 +1,14 @@
+{
+  "name": "kspp-analysis",
+  "displayName": "KSPP Studio Analysis Agent",
+  "version": "0.1.0",
+  "description": "Turns a user story or ticket into gaps and questions, Given/When/Then acceptance criteria, a codebase impact map, and an ordered TDD test plan.",
+  "author": {
+    "name": "Sybilla Dantas",
+    "url": "https://github.com/sybilla11"
+  },
+  "homepage": "https://github.com/sybilla11/kspp-studio-agents/tree/main/plugins/kspp-analysis",
+  "repository": "https://github.com/sybilla11/kspp-studio-agents",
+  "license": "MIT",
+  "keywords": ["user-stories", "tdd", "acceptance-criteria", "requirements", "planning"]
+}

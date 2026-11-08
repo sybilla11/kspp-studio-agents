@@ -1,0 +1,19 @@
+{
+  "name": "kspp-studio-agents",
+  "description": "KSPP Studio's Claude Code agents for everyday engineering workflows: story analysis, TDD planning, and more.",
+  "owner": {
+    "name": "Sybilla Dantas",
+    "url": "https://github.com/sybilla11"
+  },
+  "plugins": [
+    {
+      "name": "kspp-analysis",
+      "displayName": "KSPP Studio Analysis Agent",
+      "source": "./plugins/kspp-analysis",
+      "description": "Turns a user story or ticket into gaps and questions, Given/When/Then acceptance criteria, a codebase impact map, and an ordered TDD test plan.",
+      "version": "0.1.0",
+      "category": "development",
+      "tags": ["user-stories", "tdd", "acceptance-criteria", "requirements", "planning"]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      # Structural checks only: manifests, frontmatter, and paths. No model calls, no credentials needed.
+      - name: Validate marketplace
+        run: npx -y @anthropic-ai/claude-code@2.1.220 plugin validate . --strict
+
+      - name: Validate plugins
+        run: |
+          for plugin in plugins/*/; do
+            npx -y @anthropic-ai/claude-code@2.1.220 plugin validate "$plugin" --strict
+          done

@@ -1,0 +1,1 @@
+As a wallet holder, I want to add money from my linked bank account to any of my wallets, including a foreign-currency wallet, so that I can fund spending abroad. If the wallet currency differs from my bank's currency, I should see the converted amount and any fee before I confirm, and the quoted rate should be locked for 30 seconds.
