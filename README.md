@@ -57,6 +57,8 @@ claude plugin marketplace add sybilla11/kspp-studio-agents
 claude plugin install kspp-analysis@kspp-studio-agents
 ```
 
+> **Using the VS Code or JetBrains extension?** The `/plugin` command only works in Claude Code in a terminal; the IDE extensions reply "/plugin isn't available in this environment". Run the two `claude plugin` commands above in your IDE's integrated terminal instead, then start a new Claude Code conversation so it picks up the plugin.
+
 ### For a whole team, in a private repo
 
 Commit this to your project's `.claude/settings.json`:
